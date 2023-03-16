@@ -1,0 +1,114 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.invalid {
+ border-color:crimson;
+}
+
+#errName,#errComm {
+  color: crimson;
+  margin-left: 15px;
+  font-size: 13px;
+}
+
+#addComm {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  color: rgb(42, 96, 106);
+  font-size: 15px;
+  margin: 15px;
+  max-width: 450px;
+  border: 2px solid rgb(42, 96, 106);
+  border-radius: 5px;
+}
+
+input {
+  background-color:rgb(218, 255, 181);
+  height: 25px;
+}
+
+textarea {
+  background-color:rgb(210, 238, 248);
+}
+
+#sending {
+  display: flex;
+  justify-content: right;
+  max-width: 450px;
+  margin-left: 15px;
+}
+
+#chooseDate {
+  display:flex;
+}
+
+#text {
+  color: rgb(42, 96, 106);
+  margin: 15px 15px 5px 15px;
+}
+
+#button {
+  background-color: rgb(218, 255, 181);
+  color: rgb(42, 96, 106);
+  border: 2px solid rgb(42, 96, 106);
+  border-radius: 5px;
+  margin: 15px 0px 55px 0px;
+  height: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#button:active {
+  background: rgb(172, 254, 90);
+}
+
+#commName {
+  font-weight: 900;
+}
+
+#commText, #commDate, #commName {
+  margin: 15px;
+  color: rgb(42, 96, 106);
+}
+
+#commLike, #commLike_act, #commDel {
+  
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  cursor: pointer;
+}
+
+#commLike {
+  color: white;
+  background-image: url("img/love.png");
+  margin: 5px 10px 45px 10px;
+}
+
+#commLike_act {
+  color: white;
+  background-image: url("img/love_act.png");
+  margin: 5px 10px 45px 10px;
+}
+
+#commDel {
+  color: white;
+  margin: 5px 10px 32px 15px;
+  background-image: url("img/bin.png");
+}
+
+#date {
+  background-color: rgb(218, 255, 181);
+  color: rgb(42, 96, 106);
+  border: 2px solid rgb(42, 96, 106);
+  border-radius: 5px;
+  height: 25px;
+  margin: 15px;
+}
+

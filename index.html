@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Комментарии</title>
+</head>
+
+<body>
+  <div id="addComm">
+    <p id="text">Добавить комментарий</p>
+    <input id="input" placeholder="Введите имя">
+    <div id="errName"></div>
+    <textarea type="text" id="textarea" cols="60" rows="10" maxlength="1000" placeholder="Введите комментарий"
+      onkeypress="handleKeyPress(event)"></textarea>
+    <div id="errComm"></div>
+    <div id="sending">
+      <div id="chooseDate">
+        <p id="text">Дата:</p>
+        <input id="date" type="date">
+      </div>
+      <form id="btnSend" onclick="sendComm()">
+        <input id="button" type="button" value="Отправить">
+      </form>
+    </div>
+  </div>
+
+  <h1 id="header"></h1>
+
+  <script src="js.js"></script>
+
+</body>
+
+</html>
