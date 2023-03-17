@@ -48,7 +48,7 @@ function sendComm() {
 
       let commentsBlock = document.createElement('div');
       commentsBlock.id = "commentsBlock";
-      header.before(commentsBlock);
+      white.before(commentsBlock);
 
       let commName = document.createElement('div');
       commName.id = "commName";
@@ -105,6 +105,7 @@ function sendComm() {
 function handleKeyPress(e) {
    let key = e.keyCode;
    if (key === 13) { // Клавиша Enter
+      white.focus();
       sendComm();
    }
 }
