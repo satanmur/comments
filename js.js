@@ -12,7 +12,7 @@ input.onblur = function () {
    }
 };
 
-textarea.onkeypress = function () {
+textarea.onfocus = function () {
    if (this.classList.contains('invalid')) {
       this.classList.remove('invalid');
       errComm.innerHTML = "";
@@ -107,7 +107,6 @@ function handleKeyPress(e) {
    if (key === 13) { // Клавиша Enter
       white.focus();
       sendComm();
+
    }
 }
-
-
