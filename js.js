@@ -12,14 +12,14 @@ input.onblur = function () {
    }
 };
 
-textarea.onfocus = function () {
+textarea.onkeypress = function () {
    if (this.classList.contains('invalid')) {
       this.classList.remove('invalid');
       errComm.innerHTML = "";
    }
 };
 
-input.onfocus = function () {
+input.onkeypress = function () {
    if (this.classList.contains('invalid')) {
       this.classList.remove('invalid');
       errName.innerHTML = "";
