@@ -17,7 +17,7 @@ body {
   flex-direction: column;
 }
 
-input, textarea {
+#input, textarea {
   color: rgb(42, 96, 106);
   font-size: 15px;
   margin: 15px;
@@ -26,7 +26,7 @@ input, textarea {
   border-radius: 5px;
 }
 
-input {
+#input {
   background-color:rgb(218, 255, 181);
   height: 25px;
 }
@@ -34,6 +34,19 @@ input {
 textarea {
   background-color:rgb(210, 238, 248);
 }
+
+#white {
+  border: 1px solid white;
+  width: 0;
+  height: 0;
+  color: white;
+}
+
+#white:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 
 #sending {
   display: flex;
@@ -111,4 +124,3 @@ textarea {
   height: 25px;
   margin: 15px;
 }
-
