@@ -89,23 +89,22 @@ function sendComm() {
             commLike_act.replaceWith(commLike);
          }
       }
-
    } else {
-      textarea.classList.add('invalid');
-      input.classList.add('invalid');
-      errName.innerHTML = 'Поле обязательно для заполнения!'
-      errComm.innerHTML = 'Комментарий должен содержать от 5 до 1000 символов.'
+      if (input.value.length < 1) {
+         input.classList.add('invalid');
+         errName.innerHTML = 'Поле обязательно для заполнения!'
+      }
+
+      if (textarea.value.length < 5) {
+         textarea.classList.add('invalid');
+         errComm.innerHTML = 'Комментарий должен содержать от 5 до 1000 символов.'
+      }
    }
 }
 
 function handleKeyPress(e) {
    let key = e.keyCode;
    if (key === 13) { // Клавиша Enter
-      input.focus();
       sendComm();
    }
 }
-
-
-
-
